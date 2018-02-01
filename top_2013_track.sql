@@ -1,5 +1,5 @@
 
-SELECT Name, max("Total Sales")
+SELECT Name as "Track Name", max("Total Sales") as "Number of Sales"
 FROM(
 SELECT Track.Name, sum(InvoiceLine.TrackId) as "Total Sales"
 FROM Invoice
